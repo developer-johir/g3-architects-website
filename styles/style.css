@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Lato:wght@100;300;400&family=Open+Sans:wght@700&family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+
+/* Shared Styles */
+* {
+  font-family: "Berkshire Swash", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+.btn-primary{
+    color: white;
+    background-color: #FF900E;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 16px;
+}
+
+/* Header Styles */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    font-size: 45px;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242;
+}
+
+/* Banner Styles */
+.banner-content{
+    width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 10px;
+}
+.banner-content h3{
+    color: #131313;
+    font-size: 64px;
+    margin: -5px 0;
+}
+.banner-content p{
+    font-size: 16px;
+    color: #727272;
+}
