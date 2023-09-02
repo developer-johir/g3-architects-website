@@ -111,10 +111,11 @@ main {
 .facts {
   padding: 40px 0;
 }
-.facts-card-container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
+.facts-card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
 }
 .facts-card-container .card {
   border-radius: 8px;
@@ -122,19 +123,54 @@ main {
   text-align: center;
   padding: 30px;
 }
-.facts-card-container .card-stats{
-    color: #424242;
-    font-size: 2.8rem;
-    font-weight: 600;
-    margin: 5px 0;
+.facts-card-container .card-stats {
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 5px 0;
 }
-.facts-card-container .card-title{
-    color: #727272;
-    font-size: 1.20rem;
-    font-weight: 600;
-    margin-top: 5px;
+.facts-card-container .card-title {
+  color: #727272;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5px;
 }
 /* Facts Styles End */
+
+/* Sponsors Style Start */
+.sponsors {
+  padding: 50px 0;
+}
+.sponsors-title {
+  text-align: center;
+}
+.sponsors-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.sponsors-img-container img {
+  width: 165px;
+}
+/* Sponsors Style End */
+
+/*  footer Style */
+
+footer {
+  width: 1440px;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+footer, p{
+    text-align: center;
+    color: #424242;
+    font-size: 20px;
+    font-weight: 400;
+}
 
 /*---- Responsive media queries ----*/
 /* Mobile devices */
@@ -143,7 +179,9 @@ main {
     padding: 10px;
   }
   nav,
-  .teams-container {
+  .teams-container,
+  .facts-card-container,
+  .sponsors-img-container {
     flex-direction: column;
   }
   .banner-content {
@@ -158,6 +196,12 @@ main {
   .teams-content {
     padding: 10px 30px;
     text-align: center;
+  }
+  .facts-title {
+    text-align: center;
+  }
+  footer{
+    width: 100%;
   }
 }
 
@@ -176,6 +220,16 @@ main {
     flex-direction: column;
   }
   .teams-img-container img {
+    width: 100%;
+  }
+  .sponsors-img-container img {
+    width: 100px;
+  }
+  .facts-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
     width: 100%;
   }
 }
